@@ -3,8 +3,8 @@ import React from 'react';
 const VideoComponent = () => {
   // List of video sources
   const videos = [
-    { src: '/videos/video1.mp4', type: 'video/mp4' },
-    { src: '/videos/video2.mp4', type: 'video/mp4' },
+    { src: '', type: 'video/mp4' },
+    { src: '', type: 'video/mp4' },
     // Add more video sources here if needed
   ];
 

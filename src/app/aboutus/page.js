@@ -56,7 +56,7 @@ const Page = () => {
               </div>
             </div>
             <p className="font-normal text-base leading-6 text-white mt-6">
-            The Critical Peace Studies Society (CPSS) is a dynamic community of scholars and activists dedicated to exploring social justice, peace education, peace studies, and international relations as a multidimensional field. This transdisciplinary forum envisions and creates possibilities for the future of education and the world, beginning with a reexamination of the concepts of 'I' and 'International Relations' from Global South and subaltern perspectives.
+            The Critical Peace Studies Society (CPSS) is a dynamic community of scholars and activists dedicated to exploring social justice, peace education, peace studies, and international relations as a multidimensional field. This transdisciplinary forum envisions and creates possibilities for the future of education and the world, beginning with a reexamination of the concepts of &apos;I&apos; and &apos;International Relations&apos; from Global South and subaltern perspectives.
             </p>
           </div>
 
@@ -76,7 +76,7 @@ const Page = () => {
                 What We Do
               </h2>
               <p className="font-normal text-base leading-6 text-white mt-4">
-              The purpose of creating this transdisciplinary forum is to imagine and create different possibilities for the future of education and the world at large. Believing that change has to begin from within ourselves, we review our notions of 'I' and 'International Relations' from the Global South/ subaltern perspectives. We aim to explore and reclaim Southern/ subaltern voices and agency in the international, developing worldviews, discourses, and strategies for peaceful futures for ALL. While examining the ‘international’ from below, we challenge top-down, hegemonic worldviews and narratives.
+              The purpose of creating this transdisciplinary forum is to imagine and create different possibilities for the future of education and the world at large. Believing that change has to begin from within ourselves, we review our notions of &apos;I&apos; and &apos;International Relations&apos; from the Global South/ subaltern perspectives. We aim to explore and reclaim Southern/ subaltern voices and agency in the international, developing worldviews, discourses, and strategies for peaceful futures for ALL. While examining the &lsquo;international&rsquo; from below, we challenge top-down, hegemonic worldviews and narratives.
               </p>
               <p className="font-normal text-base leading-6 text-white mt-6">
               The group invites participation, contributions, suggestions from scholars; activists from different fields who wish imagine and enact a just and peaceful world for all. We especially welcome decolonial/ Southern/ subaltern discourses and practices. 

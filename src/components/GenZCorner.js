@@ -1,6 +1,5 @@
 "use client"
 import { useState, useEffect } from "react";
-import VideoComponent from "./VideoComponent";
 
 export const GenZCorner = () => {
   const images = [
@@ -26,13 +25,8 @@ export const GenZCorner = () => {
       style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
 
         <div className="px-8 md:px-24 py-12">
-
           <p className="bg-[#0A0708] rounded-lg shadow-custom font-bold text-[#89BE63] text-2xl w-56 px-8 py-4">GenZ Corner</p>
-
-          <VideoComponent/>
-
         </div>
-      
 
     </section>
   )

@@ -18,7 +18,7 @@ export const Hero = () => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 15000); 
+    }, 60000); 
 
     return () => clearInterval(interval);
   }, [images.length]);

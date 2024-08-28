@@ -45,7 +45,7 @@ const Page = () => {
               <h2 className="xl:w-8/12 lg:w-10/12 w-full font-bold text-[#89BE63] md:text-4xl text-2xl lg:leading-10 leading-9 mt-2">
               The Critical Peace Studies Society (CPSS)
               </h2>
-              <div className="relative bg-white overflow-hidden shadow-custom rounded-full w-24 h-24">
+              <div className="relative bg-white overflow-hidden shadow-custom rounded-full w-20 h-20">
                 <Image 
                   src="/Images/cpss-logo.png" 
                   alt="event" 
@@ -105,10 +105,10 @@ const Page = () => {
 
 
             {/* first project card */}
-            <div className='flex flex-col md:flex-row items-start gap-x-4 p-4 min-h-64 w-72 md:w-[576px] rounded-lg bg-[#1A1A1A] border-[#89BE63] border-2 shadow-custom'>
+            <div className='flex flex-col md:flex-row items-start gap-x-4 p-4 min-h-64 w-64 md:w-[512px] rounded-lg bg-[#1A1A1A] border-[#89BE63] border-2 shadow-custom'>
 
               {/* image div */}
-              <div className='h-56 w-64 md:w-[576px] rounded-lg relative overflow-hidden mt-2'>
+              <div className='h-56 w-56 md:w-[512px] rounded-lg relative overflow-hidden mt-2'>
                 <Image 
                   src="/Images/pluriversity-project.png" 
                   alt="event" 
@@ -120,8 +120,8 @@ const Page = () => {
 
               {/* text div in the middle */}
               <div className='flex flex-col mt-2'>
-                <h1 className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap text-white">
-                  The Pluriversity <span className="text-2xl md:text-3xl">لاھور</span>
+                <h1 className="self-center text-lg md:text-xl font-semibold whitespace-nowrap text-white">
+                  The Pluriversity <span className="text-xl md:text-2xl">لاھور</span>
                 </h1>
 
                 {!hidden1 && (
@@ -138,10 +138,10 @@ const Page = () => {
 
 
             {/* second project card */}
-            <div className='flex flex-col md:flex-row items-start gap-x-4 p-4 min-h-64 w-72 md:w-[576px] rounded-lg bg-[#1A1A1A] border-[#89BE63] border-2 shadow-custom'>
+            <div className='flex flex-col md:flex-row items-start gap-x-4 p-4 min-h-64 w-64 md:w-[512px] rounded-lg bg-[#1A1A1A] border-[#89BE63] border-2 shadow-custom'>
 
               {/* image div */}
-              <div className='h-56 w-64 md:w-[576px] rounded-lg relative overflow-hidden mt-2'>
+              <div className='h-56 w-56 md:w-[512px] rounded-lg relative overflow-hidden mt-2'>
                 <Image 
                   src="/Images/journal-project.png" 
                   alt="event" 
@@ -153,7 +153,7 @@ const Page = () => {
 
               {/* text div in the middle */}
               <div className='flex flex-col mt-2'>
-                <h1 className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap text-white">
+                <h1 className="self-center text-lg md:text-xl font-semibold whitespace-nowrap text-white">
                 Journal of Critical Peace <br />Studies
                 </h1>
 
@@ -190,71 +190,69 @@ const Page = () => {
               <li className="flex flex-col w-full md:w-1/2 px-3 mb-12">
                 <div className="flex items-center">
                   <div className="bg-[#1A1A1A] border border-white shadow-custom rounded-full p-4 mr-4">
-                    <FaHandsHelping className="text-[#89BE63] w-8 h-8" />
+                    <FaHandsHelping className="text-[#89BE63] w-6 md:w-8 h-6 md:h-8" />
                   </div>
-                  <h3 className="text-xl font-semibold">Collaborations</h3>
+                  <h3 className="text-lg md:text-xl font-semibold">Collaborations</h3>
                 </div>
-                <p className="text-base mt-4">Contributions to our projects.</p>
+                <p className="text-sm md:text-base mt-4">Contributions to our projects.</p>
               </li>
               
               {/* Network */}
               <li className="flex flex-col w-full md:w-1/2 px-3 mb-12">
                 <div className="flex items-center">
                   <div className="bg-[#1A1A1A] border border-white shadow-custom rounded-full p-4 mr-4">
-                    <FaNetworkWired className="text-[#89BE63] w-8 h-8" />
+                    <FaNetworkWired className="text-[#89BE63] w-6 md:w-8 h-6 md:h-8" />
                   </div>
-                  <h3 className="text-xl font-semibold">Network</h3>
+                  <h3 className="text-lg md:text-xl font-semibold">Network</h3>
                 </div>
-                <p className="text-base mt-4">Join discussions, peer reviews, and present work at our events.</p>
+                <p className="text-sm md:text-base mt-4">Join discussions, peer reviews, and present work at our events.</p>
               </li>
               
               {/* Religious Scholars */}
               <li className="flex flex-col w-full md:w-1/2 px-3 mb-12">
                 <div className="flex items-center">
                   <div className="bg-[#1A1A1A] border border-white shadow-custom rounded-full p-4 mr-4">
-                    <FaPrayingHands className="text-[#89BE63] w-8 h-8" />
+                    <FaPrayingHands className="text-[#89BE63] w-6 md:w-8 h-6 md:h-8" />
                   </div>
-                  <h3 className="text-xl font-semibold">Religious Scholars</h3>
+                  <h3 className="text-lg md:text-xl font-semibold">Religious Scholars</h3>
                 </div>
-                <p className="text-base mt-4">Engage in collaboration and mutual learning.</p>
+                <p className="text-sm md:text-base mt-4">Engage in collaboration and mutual learning.</p>
               </li>
               
               {/* Internships */}
               <li className="flex flex-col w-full md:w-1/2 px-3 mb-12">
                 <div className="flex items-center">
                   <div className="bg-[#1A1A1A] border border-white shadow-custom rounded-full p-4 mr-4">
-                    <FaUniversity className="text-[#89BE63] w-8 h-8" />
+                    <FaUniversity className="text-[#89BE63] w-6 md:w-8 h-6 md:h-8" />
                   </div>
-                  <h3 className="text-xl font-semibold">Internships</h3>
+                  <h3 className="text-lg md:text-xl font-semibold">Internships</h3>
                 </div>
-                <p className="text-base mt-4">Opportunities for selected graduate and undergraduate students.</p>
+                <p className="text-sm md:text-base mt-4">Opportunities for selected graduate and undergraduate students.</p>
               </li>
               
               {/* Visiting Scholars */}
               <li className="flex flex-col w-full md:w-1/2 px-3 mb-12">
                 <div className="flex items-center">
                   <div className="bg-[#1A1A1A] border border-white shadow-custom rounded-full p-4 mr-4">
-                    <FaChalkboardTeacher className="text-[#89BE63] w-8 h-8" />
+                    <FaChalkboardTeacher className="text-[#89BE63] w-6 md:w-8 h-6 md:h-8" />
                   </div>
-                  <h3 className="text-xl font-semibold">Visiting Scholars</h3>
+                  <h3 className="text-lg md:text-xl font-semibold">Visiting Scholars</h3>
                 </div>
-                <p className="text-base mt-4">Participation in programs, seminars, and research.</p>
+                <p className="text-sm md:text-base mt-4">Participation in programs, seminars, and research.</p>
               </li>
               
               {/* Contributions */}
               <li className="flex flex-col w-full md:w-1/2 px-3 mb-12">
                 <div className="flex items-center">
                   <div className="bg-[#1A1A1A] border border-white shadow-custom rounded-full p-4 mr-4">
-                    <FaPenNib className="text-[#89BE63] w-8 h-8" />
+                    <FaPenNib className="text-[#89BE63] w-6 md:w-8 h-6 md:h-8" />
                   </div>
-                  <h3 className="text-xl font-semibold">Contributions</h3>
+                  <h3 className="text-lg md:text-xl font-semibold">Contributions</h3>
                 </div>
-                <p className="text-base mt-4">Involvement by writers, journalists, and artists through creative mediums.</p>
+                <p className="text-sm md:text-base mt-4">Involvement by writers, journalists, and artists through creative mediums.</p>
               </li>
             </div>
           </ul>
-
-
 
         </div>
 

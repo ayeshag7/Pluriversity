@@ -13,8 +13,8 @@ export const ReadingCard = ({ title, author, year }) => {
   const randomImage = images[Math.floor(Math.random() * images.length)];
 
   return (
-    <div className="bg-[#1A1A1A] h-[432px] w-72 md:w-80 border border-[#89BE63] rounded-lg shadow-custom p-4 reading-card">
-      <div className="h-64 w-64 md:w-72 relative bg-white overflow-hidden shadow-custom rounded-lg">
+    <div className="bg-[#1A1A1A] h-[432px] w-64 md:w-72 border border-[#89BE63] rounded-lg shadow-custom p-4 reading-card">
+      <div className="h-64 w-56 md:w-64 relative bg-white overflow-hidden shadow-custom rounded-lg">
         <Image
           src={randomImage}
           alt="pattern"

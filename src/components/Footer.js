@@ -6,10 +6,10 @@ export const Footer = () => {
         <div className="bg-[#89BE63] w-full h-0.5"></div>
         <div className="mx-auto w-full max-w-screen-xl p-4 py-12 lg:py-8 lg:px-8">
             <div className="md:flex md:justify-between">
-                <div className="mb-6 md:mb-0">
+                <div className="mb-16 md:mb-0">
                     <Link href="/" className="flex items-center">
-                        <Image src="/Images/logo-f.png" alt="Pluriversity Logo" width={64} height={64} />
-                        <span className="self-center text-xl text-white font-semibold whitespace-nowrap">The Pluriversity <span className='text-2xl ml-2'>لاھور</span></span>
+                        <Image src="/Images/logo-f.png" alt="Pluriversity Logo" width={60} height={60} />
+                        <span className="self-center text-xl text-white font-semibold whitespace-nowrap">The Pluriversity <br /><span className='text-2xl ml-2'>لاھور</span></span>
                     </Link>
                 </div>
                 <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

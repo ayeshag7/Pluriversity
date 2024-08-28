@@ -14,7 +14,7 @@ export const TopStories = () => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 60000); 
+    }, 30000); 
 
     return () => clearInterval(interval);
   }, [images.length]);

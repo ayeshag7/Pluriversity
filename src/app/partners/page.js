@@ -39,12 +39,12 @@ const page = () => {
 
   return (
     <main className="min-h-screen bg-[#0A0708] pt-8 pb-24 px-4">
-      <div className="py-8 px-8 md:px-20">
+      <div className="py-8 px-4 md:px-8">
         <h1 className="font-bold text-[#89BE63] md:text-3xl text-2xl mb-4">Partners and Advisors</h1>
         <p className="text-white mb-16">Our esteemed partners and advisors consist of leading organizations and thought leaders committed to fostering academic excellence, social impact, and cultural enrichment. Together, we collaborate to drive meaningful change and promote the exchange of knowledge across diverse fields.</p>
 
         {/* partner cards come here */}
-        <div className="flex flex-wrap gap-x-8 gap-y-12 justify-center mt-8">
+        <div className="flex flex-wrap md:gap-x-8 gap-y-12 justify-center mt-8">
           {organizations.map((organization, index) => (
             <PartnerCard
               key={index}

@@ -126,7 +126,7 @@ export default function page ({params}) {
   return (
     <main className='min-h-screen bg-[#0A0708]'>
         <div className='flex flex-col md:flex-row items-center justify-center gap-x-12 pt-24 md:pt-28 max-md:px-4 max-md:pb-24'>
-            <div className="h-80 md:h-96 w-72 md:w-96 border border-[#89BE63] shadow-custom rounded-lg relative overflow-hidden">
+            <div className="h-80 md:h-96 w-64 md:w-96 border border-[#89BE63] shadow-custom rounded-lg relative overflow-hidden">
                 <Image
                 src={`/Images/${member.profilePicture}`}
                 alt=""
@@ -135,9 +135,9 @@ export default function page ({params}) {
                 className="absolute inset-0"
                 />
             </div>
-            <div className='flex flex-col gap-y-4 max-md:mt-8'>
-                <h1 className='text-2xl md:text-3xl font-bold text-[#89BE63]'>{member.name}</h1>
-                <p className='text-lg text-white w-72 md:w-[576px]'>{member.description}</p>
+            <div className='flex flex-col gap-y-4 max-md:mt-8 max-md:mx-4'>
+                <h1 className='text-2xl md:text-3xl font-bold text-[#89BE63] ml-4'>{member.name}</h1>
+                <p className='text-base md:text-lg text-white w-64 md:w-[576px] ml-4'>{member.description}</p>
             </div>
         </div>
     </main>

@@ -14,10 +14,10 @@ export const PartnerCard = ({name, picture, description, url}) => {
   };
 
   return (
-    <div className='flex flex-col md:flex-row items-start gap-x-4 p-4 min-h-64 w-72 md:w-[576px] rounded-lg bg-[#1A1A1A] border-[#89BE63] border-2 shadow-custom'>
+    <div className='flex flex-col md:flex-row items-start gap-x-4 p-4 min-h-64 w-64 md:w-[512px] rounded-lg bg-[#1A1A1A] border-[#89BE63] border-2 shadow-custom'>
 
         {/* image div */}
-        <div className='h-56 w-64 md:w-[576px] rounded-lg relative overflow-hidden mt-2'>
+        <div className='h-56 w-56 md:w-[512px] rounded-lg relative overflow-hidden mt-2'>
             <Image 
                   src={`/Images/${picture}`}
                   alt="event" 

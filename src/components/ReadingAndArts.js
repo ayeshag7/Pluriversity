@@ -50,7 +50,7 @@ export const ReadingAndArts = () => {
 
       <div className="flex flex-col md:flex-row">
         {/* Changing images div */}
-        <div className="border border-[#89BE63] shadow-custom w-72 h-72 md:w-[480px] md:h-[480px] rounded-full ml-4 md:ml-20 mt-8 mb-16 overflow-hidden relative">
+        <div className="border border-[#89BE63] shadow-custom w-64 h-64 md:w-[480px] md:h-[480px] rounded-full ml-4 md:mx-12 mt-8 mb-16 overflow-hidden relative">
           <Image 
             src={images[currentImageIndex]} 
             alt="event" 
@@ -62,10 +62,10 @@ export const ReadingAndArts = () => {
         
         <div>
 
-          <p className="text-[#89BE63] underline ml-8 md:ml-20">View More</p>
+          <p className="text-[#89BE63] underline ml-8 md:ml-12">View More</p>
 
           <FollowerPointerCard title="Nature and flowers, like reading, nurture the soul, offering quiet moments of reflection and growth. Both invite us to slow down, reflect, and find beauty in simplicity.">
-            <div className="flex flex-wrap gap-y-8 gap-x-8 ml-4 md:ml-20 mt-8 mb-16">
+            <div className="flex flex-wrap gap-y-8 gap-x-8 ml-4 md:ml-8 mt-8 mb-16">
                 {readingsList.map((reading, index) => (
                   <ReadingCard
                     key={index}

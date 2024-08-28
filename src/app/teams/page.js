@@ -161,7 +161,7 @@ const page = () => {
         <p className="text-2xl md:text-3xl font-bold text-[#89BE63] mb-4">Senior Officer</p>
       </div>
       <div className='flex flex-col md:flex-row items-center justify-center gap-x-16 mb-16'>
-          <div className="h-80 md:h-96 w-72 md:w-96 border border-[#89BE63] shadow-custom rounded-lg relative overflow-hidden max-md:mb-8">
+          <div className="h-80 md:h-96 w-64 md:w-96 border border-[#89BE63] shadow-custom rounded-lg relative overflow-hidden max-md:mb-8">
             <Image
                   src={`/Images/senior-member.JPG`}
                   alt=""
@@ -172,7 +172,7 @@ const page = () => {
           </div>
           <div className='flex flex-col gap-y-4'>
             <h1 className='text-2xl md:text-3xl font-bold text-[#89BE63]'>Ms. Tehreem Saeed</h1>
-            <p className='text-lg text-white w-72 md:w-[576px]'>Ms. Tehreem Saeed is senior officer at the Center of Critical and Peace Studies within the Department of Political Science and International Relations at the University of Management and Technology (U.M.T) in Lahore. With a dedicated focus on research and a strong academic background, she has made significant contributions to the field.</p>
+            <p className='text-base md:text-lg text-white w-64 md:w-[576px]'>Ms. Tehreem Saeed is senior officer at the Center of Critical and Peace Studies within the Department of Political Science and International Relations at the University of Management and Technology (U.M.T) in Lahore. With a dedicated focus on research and a strong academic background, she has made significant contributions to the field.</p>
           </div>
         </div>
       

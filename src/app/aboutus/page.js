@@ -208,28 +208,6 @@ const Page = () => {
                 <p className="text-sm md:text-base mt-4">Join discussions, peer reviews, and present work at our events.</p>
               </li>
               
-              {/* Religious Scholars */}
-              <li className="flex flex-col w-full md:w-1/2 px-3 mb-12">
-                <div className="flex items-center">
-                  <div className="bg-[#1A1A1A] border border-white shadow-custom rounded-full p-4 mr-4">
-                    <FaPrayingHands className="text-[#89BE63] w-6 md:w-8 h-6 md:h-8" />
-                  </div>
-                  <h3 className="text-lg md:text-xl font-semibold">Religious Scholars</h3>
-                </div>
-                <p className="text-sm md:text-base mt-4">Engage in collaboration and mutual learning.</p>
-              </li>
-              
-              {/* Internships */}
-              <li className="flex flex-col w-full md:w-1/2 px-3 mb-12">
-                <div className="flex items-center">
-                  <div className="bg-[#1A1A1A] border border-white shadow-custom rounded-full p-4 mr-4">
-                    <FaUniversity className="text-[#89BE63] w-6 md:w-8 h-6 md:h-8" />
-                  </div>
-                  <h3 className="text-lg md:text-xl font-semibold">Internships</h3>
-                </div>
-                <p className="text-sm md:text-base mt-4">Opportunities for selected graduate and undergraduate students.</p>
-              </li>
-              
               {/* Visiting Scholars */}
               <li className="flex flex-col w-full md:w-1/2 px-3 mb-12">
                 <div className="flex items-center">
@@ -254,6 +232,23 @@ const Page = () => {
             </div>
           </ul>
 
+        </div>
+
+        <div  className='lg:mt-20 mt-12'>
+          <h2 className="xl:w-8/12 lg:w-10/12 w-full font-bold text-[#89BE63] md:text-3xl text-2xl mb-12">
+              What We Offer
+          </h2>
+
+          {/* Internships */}
+          <li className="flex flex-col w-full md:w-1/2 px-3 mb-12">
+                  <div className="flex items-center">
+                    <div className="bg-[#1A1A1A] border border-white shadow-custom rounded-full p-4 mr-4">
+                      <FaUniversity className="text-[#89BE63] w-6 md:w-8 h-6 md:h-8" />
+                    </div>
+                    <h3 className="text-lg text-white md:text-xl font-semibold">Internships</h3>
+                  </div>
+                  <p className="text-sm text-white md:text-base mt-4">Opportunities for selected graduate and undergraduate students.</p>
+            </li>
         </div>
 
 

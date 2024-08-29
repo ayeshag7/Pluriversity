@@ -1,2 +1,2 @@
 ## The Pluriversity Lahore
-A multilingual channel to the future of education.
+A multilingual channel towards the future of education.

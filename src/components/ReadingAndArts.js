@@ -43,42 +43,26 @@ export const ReadingAndArts = () => {
 
   return (
     <section className="min-h-screen bg-[#0A0708] border-b-4 border-[#89BE63]">
-      <div className="px-8 md:px-20 pt-16 pb-12">
-        <h1 className="text-2xl md:text-3xl font-bold text-[#89BE63] mb-8">Readings Collection</h1>
-        <p className="text-white">Explore a curated selection of readings that challenge conventional perspectives and foster a deeper understanding of diverse knowledge systems. Our collection spans disciplines, cultures, and worldviews, offering critical insights to expand your intellectual horizons.</p>
-      </div>
-
-      <div className="flex flex-col md:flex-row">
+      
+      <div className="flex items-center justify-center py-8">
+        <div className="px-8 md:px-20 pt-16 pb-12">
+          <h1 className="text-2xl md:text-3xl font-bold text-[#89BE63] mb-8">Readings Collection</h1>
+          <p className="text-white w-72">Explore a curated selection of readings that challenge conventional perspectives and foster a deeper understanding of diverse knowledge systems. Our collection spans disciplines, cultures, and worldviews, offering critical insights to expand your intellectual horizons. What makes our collections truly special is that each one is handpicked by dedicated volunteers who bring their passion and expertise to the selection process</p>
+        </div>
         {/* Changing images div */}
-        <div className="border border-[#89BE63] shadow-custom w-64 h-64 md:w-[480px] md:h-[480px] rounded-full ml-4 md:mx-12 mt-8 mb-16 overflow-hidden relative">
-          <Image 
-            src={images[currentImageIndex]} 
-            alt="event" 
-            fill
-            style={{ objectFit: 'cover' }}
-            className="absolute inset-0 block" 
-          />
-        </div>
-        
-        <div>
-
-          <p className="text-[#89BE63] underline ml-8 md:ml-12">View More</p>
-
-          <FollowerPointerCard title="Nature and flowers, like reading, nurture the soul, offering quiet moments of reflection and growth. Both invite us to slow down, reflect, and find beauty in simplicity.">
-            <div className="flex flex-wrap gap-y-8 gap-x-8 ml-4 md:ml-8 mt-8 mb-16">
-                {readingsList.map((reading, index) => (
-                  <ReadingCard
-                    key={index}
-                    title={reading.title}
-                    author={reading.author}
-                    year={reading.year}
-                  />
-                ))}
-            </div>
-          </FollowerPointerCard>
-
-        </div>
+        <FollowerPointerCard title="Nature and flowers, like reading, nurture the soul, offering quiet moments of reflection and growth. Both invite us to slow down, reflect, and find beauty in simplicity.">
+          <div className="border border-[#89BE63] shadow-custom w-64 h-64 md:w-[480px] md:h-[480px] rounded-full ml-4 md:mx-12 mt-8 mb-16 overflow-hidden relative">
+              <Image 
+                src={images[currentImageIndex]} 
+                alt="event" 
+                fill
+                style={{ objectFit: 'cover' }}
+                className="absolute inset-0 block" 
+              />
+          </div>
+        </FollowerPointerCard>
       </div>
+
     </section>
   );
 };

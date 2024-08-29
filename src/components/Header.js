@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FollowerPointerCard } from "./FollowerPointerCard";
+// import { FollowerPointerCard } from "./FollowerPointerCard";
 
 export const Header = () => {
   const [hidden, setHidden] = useState(true);
@@ -12,30 +12,30 @@ export const Header = () => {
 
   const isActive = (path) => pathname === path;
 
-  const images = [
-    "/Images/border1.png",
-    "/Images/border2.png",
-    "/Images/border3.png",
-    "/Images/border4.png",
-    "/Images/border5.png",
-    "/Images/border6.png",
-    "/Images/border7.png",
-    "/Images/border8.png",
-    "/Images/border9.png",
-    "/Images/border10.png",
-  ];
+  // const images = [
+  //   "/Images/border1.png",
+  //   "/Images/border2.png",
+  //   "/Images/border3.png",
+  //   "/Images/border4.png",
+  //   "/Images/border5.png",
+  //   "/Images/border6.png",
+  //   "/Images/border7.png",
+  //   "/Images/border8.png",
+  //   "/Images/border9.png",
+  //   "/Images/border10.png",
+  // ];
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 5000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentImageIndex((prevIndex) =>
+  //       prevIndex === images.length - 1 ? 0 : prevIndex + 1
+  //     );
+  //   }, 5000);
 
-    return () => clearInterval(interval);
-  }, [images.length]);
+  //   return () => clearInterval(interval);
+  // }, [images.length]);
 
   return (
     <nav className="bg-[#0A0708] border-gray-200">
@@ -114,6 +114,16 @@ export const Header = () => {
             </li>
             <li>
               <Link
+                href="/journal"
+                className={`block py-1.5 px-2.5 text-white rounded md:p-0 ${
+                  isActive("/journal") ? "bg-[#89BE63] md:bg-transparent md:text-[#89BE63]" : "hover:bg-gray-900 md:hover:bg-transparent md:hover:text-[#89BE63]"
+                }`}
+              >
+                Journal
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/channel"
                 className={`block py-1.5 px-2.5 text-white rounded md:p-0 ${
                   isActive("/channel") ? "bg-[#89BE63] md:bg-transparent md:text-[#89BE63]" : "hover:bg-gray-900 md:hover:bg-transparent md:hover:text-[#89BE63]"
@@ -126,7 +136,7 @@ export const Header = () => {
         </div>
       </div>
 
-      <FollowerPointerCard title="Celebrating Tile Craft in Pakistan, a traditional art form with deep historical roots, especially in Sindh and Punjab known for its intricate geometric patterns and vibrant colors.">
+      {/* <FollowerPointerCard title="Celebrating Tile Craft in Pakistan, a traditional art form with deep historical roots, especially in Sindh and Punjab known for its intricate geometric patterns and vibrant colors.">
         <div className="bg-white w-full h-8 overflow-hidden relative">
           <Image 
             src={images[currentImageIndex]} 
@@ -136,7 +146,17 @@ export const Header = () => {
             className="absolute inset-0 block" 
           />
         </div>
-      </FollowerPointerCard>
+      </FollowerPointerCard> */}
+
+      <div className="bg-white w-full h-6 overflow-hidden relative">
+          <Image 
+            src="/Images/border-final.png" 
+            alt="event" 
+            fill
+            style={{ objectFit: 'cover' }}
+            className="absolute inset-0 block" 
+          />
+        </div>
 
       <div className="bg-[#89BE63] w-full h-0.5 mt-1"></div>
 

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 export const GenZCorner = () => {
   const images = [
     "/Images/hq-img8.png",
+    "/Images/hq-img10.png",
     "/Images/hq-img9.png",
   ];
 

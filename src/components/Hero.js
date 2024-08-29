@@ -24,8 +24,8 @@ export const Hero = () => {
   }, [images.length]);
 
   const items = [
-    { text: "A multilingual channel to the future of education", imageSrc: "/Images/tag-icon-1.png" },
-    { text: "Divesting from dominant knowledge of peace and security", imageSrc: "/Images/tag-icon-2.png" },
+    { text: "A multilingual channel towards the future of education", imageSrc: "/Images/tag-icon-1.png" },
+    { text: "Divesting from the dominant knowledge of peace and security", imageSrc: "/Images/tag-icon-2.png" },
     { text: "Centering knowledge rooted in the lived experiences of the oppressed", imageSrc: "/Images/tag-icon-3.png" },
     { text: "Co-constructing knowledge for desirable futures", imageSrc: "/Images/tag-icon-4.png" },
     { text: "Reconstructing I and the International", imageSrc: "/Images/tag-icon-5.png" },

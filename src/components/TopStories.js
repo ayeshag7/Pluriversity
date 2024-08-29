@@ -2,9 +2,8 @@
 import { useState, useEffect } from "react";
 export const TopStories = () => {
   const images = [
-    "/Images/hq-img7.png",
     "/Images/hq-img6.png",
-    "/Images/hq-img5.png",
+    "/Images/hq-img7.png",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

@@ -178,7 +178,7 @@ const page = () => {
           </div>
           <div className='flex flex-col gap-y-4'>
             <h1 className='text-2xl md:text-3xl font-bold text-[#89BE63]'>Ms. Tehreem Saeed</h1>
-            <p className='text-base md:text-lg text-white w-64 md:w-[576px]'>Ms. Tehreem Saeed is senior officer at the Center of Critical and Peace Studies within the Department of Political Science and International Relations at the University of Management and Technology (U.M.T) in Lahore. She's an avid researcher in the field of political science.</p>
+            <p className='text-base md:text-lg text-white w-64 md:w-[576px]'>Ms. Tehreem Saeed is senior officer at the Center of Critical and Peace Studies within the Department of Political Science and International Relations at the University of Management and Technology (U.M.T) in Lahore. She is an avid researcher in the field of political science.</p>
           </div>
         </div>
       

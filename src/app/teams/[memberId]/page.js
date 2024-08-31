@@ -36,27 +36,27 @@ export default function page ({params}) {
     },
     {
       id: "senior-6",
-      name: "Dr Asghar Dashti",
-      profilePicture: "senior-mem7.jpg",
-      description: "Dr. Asghar Ali Dashti has been serving the Department of International Relations, Federal Urdu University, Karachi since 2008. He holds a PhD degree on the topic of ‘Pakistan America Military Relations’. He is a research supervisor at Area Study Center for Middle East and Arab Countries, University of Baluchistan, Quetta, and is also the assistant editor of Research journal Wifaqiyan. He is a member of Human Rights Commission of Pakistan (HRCP) and part of Indigenous Rights Alliance (Sindh)."
-    },
-    {
-      id: "senior-7",
       name: "Sohaib Ali",
       profilePicture: "senior-mem2.jpg",
       description: "Sohaib Ali is a doctoral candidate in International Relations and an Elsa-Neumann Scholar at Freie Universität, Berlin. He has an MSc in Social Science Research Methods (substantive focus: Globalization and Counter-Radicalization) from Middlesex University, London, and an MA in International Relations from the University of Punjab, Lahore. He is an Affiliated Researcher at the Leibniz Center for Modern Oriental Studies, Berlin (ZMO) and a faculty member (on leave) at the Department of Political Science and International Relations, University of Management and Technology, Lahore. His doctoral research is focused on the contending political theologies of Pakistan's transnational Islamic actors, and he has published book chapters on 'Pacifying Sunni–Shi’ite Relations in Pakistan' (Routledge, 2020) and 'Iqbalian Liberation Theology' (Springer, 2023)."
     },
     {
-      id:"senior-8",
-      name: "Muhammad Qasim",
-      profilePicture: "cc-mem2.jpg",
-      description: "Muhammad Qasim is a lecturer of World History at Aitchison College. He previously taught at various universities in Lahore within the Department of Social Science. His research areas include decolonial and critical theory, social movements, and the colonial and postcolonial politics of Punjab."
-    },
-    {
-      id:"senior-9",
+      id:"senior-7",
       name: "Junaid Akhtar",
       profilePicture: "senior-mem9.jpg",
       description: "Junaid Akhtar is an accomplished academic and researcher dedicated to advancing computer science education in Pakistan. Currently a Content Architect at Educative, Inc. and co-founder of ReCompute.pk, he focuses on enhancing the quality of computing education and making it accessible on a larger scale. With a background in Software Engineering and Data Mining, Junaid has published extensively on topics like Evolutionary Algorithms and AI. His decade-long tenure as an Assistant Professor at Namal Institute reflects his commitment to blending global best practices with local educational needs, aiming to reshape the future of computing education in Pakistan."
+    },
+    {
+      id: "senior-8",
+      name: "Dr Asghar Dashti",
+      profilePicture: "senior-mem7.jpg",
+      description: "Dr. Asghar Ali Dashti has been serving the Department of International Relations, Federal Urdu University, Karachi since 2008. He holds a PhD degree on the topic of ‘Pakistan America Military Relations’. He is a research supervisor at Area Study Center for Middle East and Arab Countries, University of Baluchistan, Quetta, and is also the assistant editor of Research journal Wifaqiyan. He is a member of Human Rights Commission of Pakistan (HRCP) and part of Indigenous Rights Alliance (Sindh)."
+    },
+    {
+      id:"senior-9",
+      name: "Muhammad Qasim",
+      profilePicture: "cc-mem2.jpg",
+      description: "Muhammad Qasim is a lecturer of World History at Aitchison College. He previously taught at various universities in Lahore within the Department of Social Science. His research areas include decolonial and critical theory, social movements, and the colonial and postcolonial politics of Punjab."
     },
   ];
     
@@ -121,30 +121,42 @@ export default function page ({params}) {
   ];
     
   const inventiveTeam = [
-        {
-          id: "inventive-mem-1",
-          name: "Syed Samar Abbas Shirazi",
-          description: "A student of International Relations with a keen interest in climate governance, energy sector, and the complexities of foreign policy and international trade. Eager to apply knowledge and skills in real-world settings, contributing meaningfully to global efforts for sustainable development and making a positive impact on society.",
-          profilePicture: "it-mem2.jpeg"
-        },
-        {
-          id: "inventive-mem-2",
-          name: "Hira Riaz",
-          description: "An International Relations student with a robust background in journalism and media. With three years of experience in a media house and currently hosting podcasts at a corporate linkage institute, she skillfully navigates the education beat. Passionate about exploring global perspectives, she leverages her content creation skills to share insights, spark meaningful conversations, and inspire positive change. Fluent in both Urdu and advanced English, she is dedicated to making a significant impact through her work in media and academia.",
-          profilePicture: "it-mem3.jpeg"
-        },
-        {
-          id: "inventive-mem-3",
-          name: "Urooj Ali",
-          description: "A student of BS-International Relations at DHA Suffa University (DSU), deeply passionate about global affairs and communication strategies. Currently serves as a dedicated member of the social media team at the Critical Peace Studies Society (CPSS), effectively managing the online presence and ensuring impactful engagement with the audience. Experienced in navigating high-pressure environments, a strong team player with a keen eye for detail, and committed to excellence.",
-          profilePicture: "it-mem4.jpeg"
-        },
-        {
-          id: "inventive-mem-4",
-          name: "Muhammad Hassan Raja",
-          description: "A BS International Relations student with a minor in Economics, focusing on global politics and economic strategies. Research includes analyzing the Kashmir conflict post-Article 370’s revocation. Aims to further specialize through an MBA, with a strong interest in global business.",
-          profilePicture: "it-mem1.jpeg"
-        }
+    {
+      id: "inventive-mem-1",
+      name: "Maryam Aamer",
+      description: "Maryam Aamer, an International Relations graduate, exhibits a remarkable ability to analyze and unravel conflicts in both global and everyday contexts. She is deeply committed to personal and collective peacebuilding and liberation, reflecting her strong dedication to community service. Driven by a belief in the transformative power of modern media, Maryam leverages it to drive change and create a meaningful impact in the real world.",
+      profilePicture: "it-mem5.jpeg"
+    },
+  {
+    id: "inventive-mem-2",
+    name: "Syed Samar Abbas Shirazi",
+    description: "A student of International Relations with a keen interest in climate governance, energy sector, and the complexities of foreign policy and international trade. Eager to apply knowledge and skills in real-world settings, contributing meaningfully to global efforts for sustainable development and making a positive impact on society.",
+    profilePicture: "it-mem2.jpeg"
+  },
+  {
+    id: "inventive-mem-3",
+    name: "Hira Riaz",
+    description: "An International Relations student with a robust background in journalism and media. With three years of experience in a media house and currently hosting podcasts at a corporate linkage institute, she skillfully navigates the education beat. Passionate about exploring global perspectives, she leverages her content creation skills to share insights, spark meaningful conversations, and inspire positive change. Fluent in both Urdu and advanced English, she is dedicated to making a significant impact through her work in media and academia.",
+    profilePicture: "it-mem3.jpeg"
+  },
+  {
+    id: "inventive-mem-4",
+    name: "Urooj Ali",
+    description: "A student of BS-International Relations at DHA Suffa University (DSU), deeply passionate about global affairs and communication strategies. Currently serves as a dedicated member of the social media team at the Critical Peace Studies Society (CPSS), effectively managing the online presence and ensuring impactful engagement with the audience. Experienced in navigating high-pressure environments, a strong team player with a keen eye for detail, and committed to excellence.",
+    profilePicture: "it-mem4.jpeg"
+  },
+  {
+    id: "inventive-mem-5",
+    name: "Ahmad khan",
+    description: "Ahmad Khan, with an M.Phil from the University of Management and Technology (UMT), is a dedicated research associate at the Law School, Lahore University of Management Sciences (LUMS). Since August 1, 2018, he has been contributing his expertise and insights to the field of legal research, showcasing his commitment to advancing knowledge and scholarship in the legal domain.",
+    profilePicture: "it-mem6.jpeg"
+  },
+  {
+    id: "inventive-mem-6",
+    name: "Muhammad Hassan Raja",
+    description: "A BS International Relations student with a minor in Economics, focusing on global politics and economic strategies. Research includes analyzing the Kashmir conflict post-Article 370’s revocation. Aims to further specialize through an MBA, with a strong interest in global business.",
+    profilePicture: "it-mem1.jpeg"
+  }
   ];      
 
     const allMembers = [...seniorMembers, ...centralCoreCommittee, ...coordinatingCoreCommittee, ...inventiveTeam];

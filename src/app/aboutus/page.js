@@ -60,9 +60,9 @@ const Page = () => {
             </p>
           </div>
 
-          <div className="lg:mt-14 sm:mt-10 mt-12 relative overflow-hidden w-full h-[400px] sm:h-[500px] lg:h-[384px] rounded-lg shadow-custom">
+          <div className="lg:mt-14 sm:mt-10 mt-12 relative overflow-hidden w-full h-[400px] sm:h-[500px] lg:h-[384px] rounded-lg shadow-custom border border-[#89BE63]">
               <Image 
-                src="/Images/img45.jpg" 
+                src="/Images/new-about-image.jpeg" 
                 alt="event" 
                 fill
                 style={{ objectFit: 'cover' }}
@@ -83,7 +83,7 @@ const Page = () => {
               </p>
             </div>
 
-            <div className="lg:flex items-center lg:w-1/2 relative overflow-hidden shadow-custom rounded-lg w-full h-[400px] sm:h-[500px] lg:h-[412px]">
+            <div className="lg:flex items-center lg:w-1/2 relative overflow-hidden shadow-custom rounded-lg border border-[#89BE63] w-full h-[400px] sm:h-[500px] lg:h-[412px]">
               <Image 
                 src={images[currentImageIndex]} 
                 alt="event" 

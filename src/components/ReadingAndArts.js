@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { ReadingCard } from "./ReadingCard";
 import { FollowerPointerCard } from "./FollowerPointerCard";
+import { FolderCard } from "./FolderCard";
 
 export const ReadingAndArts = () => {
   const images = [
@@ -28,30 +28,22 @@ export const ReadingAndArts = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  const readingsList = [
-    {
-      title: "Religion and Conflict Resolution – An Introduction",
-      author: "Lee Marsden",
-      year: 2012,
-    },
-    {
-      title: "Towards a Political Theology of Post-coloniality",
-      author: "Kwok Pui-lan",
-      year: 2023,
-    }
+  const folders = [
+    { id: 1, name: 'Sohaib Ali' },
   ];
 
   return (
     <section className="min-h-screen bg-[#0A0708] border-b-4 border-[#89BE63]">
       
-      <div className="flex items-center justify-center py-8">
-        <div className="px-8 md:px-20 pt-16 pb-12">
+      <div className="flex flex-col md:flex-row items-center justify-between py-8 md:px-24">
+        {/* text-div */}
+        <div className="pt-16 pb-12">
           <h1 className="text-2xl md:text-3xl font-bold text-[#89BE63] mb-8">Readings Collection</h1>
-          <p className="text-white w-72">Explore a curated selection of readings that challenge conventional perspectives and foster a deeper understanding of diverse knowledge systems. Our collection spans disciplines, cultures, and worldviews, offering critical insights to expand your intellectual horizons. What makes our collections truly special is that each one is handpicked by dedicated volunteers who bring their passion and expertise to the selection process</p>
+          <p className="text-white w-64 md:w-96">Explore a curated selection of readings that challenge conventional perspectives and foster a deeper understanding of diverse knowledge systems. Our collection spans disciplines, cultures, and worldviews, offering critical insights to expand your intellectual horizons. What sets our collections apart is the careful curation by dedicated volunteers, each bringing their unique passion and expertise to the selection process. Their commitment ensures that every item is not only of exceptional quality but also represents a thoughtful and diverse range of voices and ideas.</p>
         </div>
         {/* Changing images div */}
         <FollowerPointerCard title="Nature and flowers, like reading, nurture the soul, offering quiet moments of reflection and growth. Both invite us to slow down, reflect, and find beauty in simplicity.">
-          <div className="border border-[#89BE63] shadow-custom w-64 h-64 md:w-[480px] md:h-[480px] rounded-full ml-4 md:mx-12 mt-8 mb-16 overflow-hidden relative">
+          <div className="border border-[#89BE63] shadow-custom w-64 h-64 md:w-[480px] md:h-[480px] rounded-full mt-8 mb-12 overflow-hidden relative">
               <Image 
                 src={images[currentImageIndex]} 
                 alt="event" 
@@ -61,6 +53,23 @@ export const ReadingAndArts = () => {
               />
           </div>
         </FollowerPointerCard>
+      </div>
+
+      <div className="reading-collections px-4 md:px-24 mb-20">
+
+        <p className="text-2xl md:text-3xl font-bold text-[#89BE63] mb-12">Explore Our Collections:</p>
+
+        {/* folders div */}
+        <div className="flex gap-x-16">
+          {folders.map((folder) => (
+              <FolderCard
+                key={folder.id}
+                id={folder.id}
+                name={folder.name}
+              />
+            ))}
+        </div>
+
       </div>
 
     </section>

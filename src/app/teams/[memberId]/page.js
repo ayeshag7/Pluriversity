@@ -60,7 +60,7 @@ export default function page ({params}) {
     },
   ];
     
-    const centralCoreCommittee = [
+  const centralCoreCommittee = [
         {
           id:"cc-1",
           name: "Wajeeh Ul Hassan",
@@ -97,9 +97,9 @@ export default function page ({params}) {
           profilePicture: "missing-ajrak.jpg",
           description: "Naima Zia's academic journey, rooted in Law, International Relations, Political Sciences, and Sociology, has shaped her into a research and development consultant with a deep understanding of the intersections between religion, society, and politics. As an expert in Neuro-Linguistic Programming (NLP), she has devoted herself to training others in interpersonal and personal coaching, with a particular emphasis on skill enhancement and unlocking potential. Driven by a commitment to integrate diverse fields of study, Naima's work focuses on devising strategies that ensure the practical application of knowledge. Her approach is grounded in the belief that true understanding should lead to meaningful action, making theory relevant and impactful in real-world scenarios."
         }
-    ];
+  ];
       
-    const coordinatingCoreCommittee = [
+  const coordinatingCoreCommittee = [
         {
           id: "coc-1",
           name: "Seher Raza",
@@ -118,9 +118,36 @@ export default function page ({params}) {
           profilePicture: "coc-mem3.jpg",
           description: "Huzaifa Khalid is a passionate advocate for decoloniality and a dedicated member of the Critical Peace Studies Society. As a Coordinator, he plays a key role in ensuring smooth collaboration among the NGO's members. Huzaifa is currently pursuing a Bachelor's degree in International Relations at UMT, where he applies his academic knowledge to his work within the organization. Since joining, Huzaifa has been instrumental in driving the society's mission of advancing research in critical peace studies."
         }
-      ];
+  ];
+    
+  const inventiveTeam = [
+        {
+          id: "inventive-mem-1",
+          name: "Syed Samar Abbas Shirazi",
+          description: "A student of International Relations with a keen interest in climate governance, energy sector, and the complexities of foreign policy and international trade. Eager to apply knowledge and skills in real-world settings, contributing meaningfully to global efforts for sustainable development and making a positive impact on society.",
+          profilePicture: "it-mem2.jpeg"
+        },
+        {
+          id: "inventive-mem-2",
+          name: "Hira Riaz",
+          description: "An International Relations student with a robust background in journalism and media. With three years of experience in a media house and currently hosting podcasts at a corporate linkage institute, she skillfully navigates the education beat. Passionate about exploring global perspectives, she leverages her content creation skills to share insights, spark meaningful conversations, and inspire positive change. Fluent in both Urdu and advanced English, she is dedicated to making a significant impact through her work in media and academia.",
+          profilePicture: "it-mem3.jpeg"
+        },
+        {
+          id: "inventive-mem-3",
+          name: "Urooj Ali",
+          description: "A student of BS-International Relations at DHA Suffa University (DSU), deeply passionate about global affairs and communication strategies. Currently serves as a dedicated member of the social media team at the Critical Peace Studies Society (CPSS), effectively managing the online presence and ensuring impactful engagement with the audience. Experienced in navigating high-pressure environments, a strong team player with a keen eye for detail, and committed to excellence.",
+          profilePicture: "it-mem4.jpeg"
+        },
+        {
+          id: "inventive-mem-4",
+          name: "Muhammad Hassan Raja",
+          description: "A BS International Relations student with a minor in Economics, focusing on global politics and economic strategies. Research includes analyzing the Kashmir conflict post-Article 370’s revocation. Aims to further specialize through an MBA, with a strong interest in global business.",
+          profilePicture: "it-mem1.jpeg"
+        }
+  ];      
 
-    const allMembers = [...seniorMembers, ...centralCoreCommittee, ...coordinatingCoreCommittee];
+    const allMembers = [...seniorMembers, ...centralCoreCommittee, ...coordinatingCoreCommittee, ...inventiveTeam];
 
     // Find the member by matching the id
     const member = allMembers.find(m => m.id === params.memberId);

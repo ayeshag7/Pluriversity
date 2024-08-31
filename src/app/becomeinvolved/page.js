@@ -106,17 +106,17 @@ const page = () => {
         <div className="flex flex-wrap gap-x-16 gap-y-4">
             <div className="flex items-center gap-x-4">
               <FaEnvelope className="text-[#89BE63] text-3xl" />
-              <p className="text-white">Seher</p>
+              <a href="mailto:seherraza20@gmail.com"><p className="text-white">Seher</p></a>
             </div>
 
             <div className="flex items-center gap-x-4">
               <FaEnvelope className="text-[#89BE63] text-3xl" />
-              <p className="text-white">Huzaifa</p>
+              <a href="mailto:huzaifakhalid1022@gmail.com"><p className="text-white">Huzaifa</p></a>
             </div>
 
             <div className="flex items-center gap-x-4">
               <FaEnvelope className="text-[#89BE63] text-3xl" />
-              <p className="text-white">Basharat</p>
+              <a href="mailto:basharnawab5@gmail.com"><p className="text-white">Bashar</p></a>
             </div>
         </div>
       </div>

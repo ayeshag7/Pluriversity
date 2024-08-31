@@ -123,6 +123,33 @@ const page = () => {
     }
   ];
 
+  const inventiveTeam = [
+  {
+    id: "inventive-mem-1",
+    name: "Syed Samar Abbas Shirazi",
+    description: "A student of International Relations with a keen interest in climate governance, energy sector, and the complexities of foreign policy and international trade. Eager to apply knowledge and skills in real-world settings, contributing meaningfully to global efforts for sustainable development and making a positive impact on society.",
+    profilePicture: "it-mem2.jpeg"
+  },
+  {
+    id: "inventive-mem-2",
+    name: "Hira Riaz",
+    description: "An International Relations student with a robust background in journalism and media. With three years of experience in a media house and currently hosting podcasts at a corporate linkage institute, she skillfully navigates the education beat. Passionate about exploring global perspectives, she leverages her content creation skills to share insights, spark meaningful conversations, and inspire positive change. Fluent in both Urdu and advanced English, she is dedicated to making a significant impact through her work in media and academia.",
+    profilePicture: "it-mem3.jpeg"
+  },
+  {
+    id: "inventive-mem-3",
+    name: "Urooj Ali",
+    description: "A student of BS-International Relations at DHA Suffa University (DSU), deeply passionate about global affairs and communication strategies. Currently serves as a dedicated member of the social media team at the Critical Peace Studies Society (CPSS), effectively managing the online presence and ensuring impactful engagement with the audience. Experienced in navigating high-pressure environments, a strong team player with a keen eye for detail, and committed to excellence.",
+    profilePicture: "it-mem4.jpeg"
+  },
+  {
+    id: "inventive-mem-4",
+    name: "Muhammad Hassan Raja",
+    description: "A BS International Relations student with a minor in Economics, focusing on global politics and economic strategies. Research includes analyzing the Kashmir conflict post-Article 370’s revocation. Aims to further specialize through an MBA, with a strong interest in global business.",
+    profilePicture: "it-mem1.jpeg"
+  }
+  ];
+
   return (
     <main className="min-h-screen bg-[#0A0708] pt-8 pb-24 px-4">
       <div className="py-8 my-8 px-8 md:px-20">
@@ -189,6 +216,26 @@ const page = () => {
       
       <div className="flex flex-wrap items-center justify-center gap-x-16 gap-y-12">
         {coordinatingCoreCommittee.map((member) => (
+          <Link
+            key={member.id}
+            href={`/teams/${member.id}`}
+            passHref
+          >
+            <ProfileCard
+              name={member.name}
+              profilePicture={member.profilePicture}
+            />
+          </Link>
+        ))}
+      </div>
+
+      <div className="py-8 my-8 px-8 md:px-20">
+        <p className="text-2xl md:text-3xl font-bold text-[#89BE63] mb-4">Inventive Team</p>
+        <p className="text-white">The Inventive Team consists of volunteer members, and is the catalyst for our innovative endeavors. This dynamic team brings together diverse perspectives to develop groundbreaking ideas and strategies. Their creative approach and commitment to excellence drive the forward momentum of our projects.</p>
+      </div>
+
+      <div className="flex flex-wrap items-center justify-center gap-x-16 gap-y-12">
+        {inventiveTeam.map((member) => (
           <Link
             key={member.id}
             href={`/teams/${member.id}`}

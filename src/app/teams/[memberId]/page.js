@@ -156,6 +156,12 @@ export default function page ({params}) {
     name: "Muhammad Hassan Raja",
     description: "A BS International Relations student with a minor in Economics, focusing on global politics and economic strategies. Research includes analyzing the Kashmir conflict post-Article 370’s revocation. Aims to further specialize through an MBA, with a strong interest in global business.",
     profilePicture: "it-mem1.jpeg"
+  },
+  {
+    id: "inventive-mem-7",
+    name: "Muhammad Bilal",
+    description: "Muhammad Bilal, originally from Sargodha, holds an MPhil in International Relations, with a keen interest in human rights. He has experience working as a Visiting Faculty member at the University of Sargodha and is currently serving as a lecturer at the University of Lahore, Sargodha Campus.",
+    profilePicture: "it-mem7.jpeg"
   }
   ];      
 

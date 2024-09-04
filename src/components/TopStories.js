@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { fetchAllStories } from '../utils/stories'; 
 import { StoryCard } from "./StoryCard";
 
 export const TopStories = () => {
@@ -21,14 +22,17 @@ export const TopStories = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  const stories = [
-    {
-      id: 1,
-      title: "Welcoming New Senior Members to CPSS",
-      description: "The Critical Peace Studies Society (CPSS) has recently welcomed several distinguished scholars to its Senior Core Committee. These members, including Sohaib Ali, Dr. Dayyab Gillani, Dr. Shabana Fayyaz, and Dr. Shahzeb Khan, bring their expertise in international relations, security studies, and peace education, furthering CPSS's mission to amplify Southern and subaltern voices in global discourse.",
-      imageSrc: "/Images/story1.png"
-    },
-  ];
+  const [stories, setStories] = useState([]);
+
+  useEffect(() => {
+    const loadStories = async () => {
+      const fetchedStories = await fetchAllStories();
+      console.log(fetchedStories)
+      setStories(fetchedStories);
+    };
+
+    loadStories();
+  }, []);
 
   return (
     <section
@@ -53,7 +57,7 @@ export const TopStories = () => {
               id={story.id}
               title={story.title}
               description={story.description}
-              imageSrc={story.imageSrc}
+              imageUrl={story.imageUrl}
             />
           ))};
         </div>

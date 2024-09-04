@@ -155,6 +155,7 @@ export const Header = () => {
             fill
             style={{ objectFit: 'cover' }}
             className="absolute inset-0 block" 
+            priority
           />
         </div>
 

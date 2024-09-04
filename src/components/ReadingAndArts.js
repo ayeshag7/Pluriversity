@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FollowerPointerCard } from "./FollowerPointerCard";
 import { FolderCard } from "./FolderCard";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
+import app from '../utils/firebaseConfig';  // Adjust path as per your structure
 
 export const ReadingAndArts = () => {
   const images = [
@@ -17,7 +19,31 @@ export const ReadingAndArts = () => {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [folders, setFolders] = useState([]); // To hold the fetched folders
 
+  // Initialize Firebase Firestore
+  const db = getFirestore(app);
+
+  // Fetch folders from Firestore
+  useEffect(() => {
+    const fetchFolders = async () => {
+      const foldersCollection = collection(db, 'folders');  // Collection name in Firestore
+      try {
+        const querySnapshot = await getDocs(foldersCollection);
+        const fetchedFolders = querySnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setFolders(fetchedFolders);
+      } catch (error) {
+        console.error("Error fetching folders: ", error);
+      }
+    };
+
+    fetchFolders();
+  }, [db]);
+
+  // Image change effect
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
@@ -28,10 +54,6 @@ export const ReadingAndArts = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  const folders = [
-    { id: 1, name: 'Sohaib Ali' },
-  ];
-
   return (
     <section className="min-h-screen bg-[#0A0708] border-b-4 border-[#89BE63]">
       
@@ -39,7 +61,7 @@ export const ReadingAndArts = () => {
         {/* text-div */}
         <div className="pt-16 pb-12">
           <h1 className="text-2xl md:text-3xl font-bold text-[#89BE63] mb-8">Readings Collection</h1>
-          <p className="text-white w-64 md:w-96">Explore a curated selection of readings that challenge conventional perspectives and foster a deeper understanding of diverse knowledge systems. Our collection spans disciplines, cultures, and worldviews, offering critical insights to expand your intellectual horizons. What sets our collections apart is the careful curation by dedicated volunteers, each bringing their unique passion and expertise to the selection process. Their commitment ensures that every item is not only of exceptional quality but also represents a thoughtful and diverse range of voices and ideas.</p>
+          <p className="text-white w-64 md:w-96">Explore a curated selection of readings that challenge conventional perspectives and foster a deeper understanding of diverse knowledge systems...</p>
         </div>
         {/* Changing images div */}
         <FollowerPointerCard title="Nature and flowers, like reading, nurture the soul, offering quiet moments of reflection and growth. Both invite us to slow down, reflect, and find beauty in simplicity.">
@@ -61,13 +83,17 @@ export const ReadingAndArts = () => {
 
         {/* folders div */}
         <div className="flex gap-x-16">
-          {folders.map((folder) => (
+          {folders.length > 0 ? (
+            folders.map((folder) => (
               <FolderCard
                 key={folder.id}
                 id={folder.id}
-                name={folder.name}
+                name={folder.folderName}
               />
-            ))}
+            ))
+          ) : (
+            <p className="text-white">No folders found.</p>
+          )}
         </div>
 
       </div>

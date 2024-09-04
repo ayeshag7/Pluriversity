@@ -5,7 +5,7 @@ import { fetchAllStories } from '../../../utils/stories';
 import Image from "next/image";
 import Link from "next/link";
 
-const page = ({params}) => {
+const Page = ({params}) => {
 
   const [stories, setStories] = useState([]);
 
@@ -59,4 +59,4 @@ const page = ({params}) => {
   )
 }
 
-export default page;
+export default Page;

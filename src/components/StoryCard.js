@@ -9,7 +9,7 @@ export const StoryCard = ({id, title, description, imageUrl}) => {
     
     {/* image div */}
     <div className='w-56 md:w-72 h-[320px] rounded-lg relative overflow-hidden mb-4'>
-        <Image 
+        <img 
         src={imageUrl}
         alt="event" 
         fill

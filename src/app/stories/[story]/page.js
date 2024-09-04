@@ -36,7 +36,7 @@ const Page = ({params}) => {
 
           {/* image div */}
           <div className="h-80 max-md:mb-8 md:h-96 w-64 md:w-96 border border-[#89BE63] shadow-custom rounded-lg relative overflow-hidden">
-            <Image
+            <img
               src={story.imageUrl}
               alt=""
               fill

@@ -5,7 +5,7 @@ import { fetchAllStories } from '../../utils/stories';
 import { StoryCard } from "@/components/StoryCard";
 
 
-const page = () => {
+const Page = () => {
 
   const [stories, setStories] = useState([]);
 
@@ -41,4 +41,4 @@ const page = () => {
   )
 }
 
-export default page;
+export default Page;

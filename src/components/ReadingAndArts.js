@@ -61,7 +61,7 @@ export const ReadingAndArts = () => {
         {/* text-div */}
         <div className="pt-16 pb-12">
           <h1 className="text-2xl md:text-3xl font-bold text-[#89BE63] mb-8">Readings Collection</h1>
-          <p className="text-white w-64 md:w-96">Explore a curated selection of readings that challenge conventional perspectives and foster a deeper understanding of diverse knowledge systems...</p>
+          <p className="text-white w-64 md:w-96">Explore a curated selection of readings that challenge conventional perspectives and foster a deeper understanding of diverse knowledge systems. Our collection spans disciplines, cultures, and worldviews, offering critical insights to expand your intellectual horizons. What sets our collections apart is the careful curation by dedicated volunteers, each bringing their unique passion and expertise to the selection process. Their commitment ensures that every item is not only of exceptional quality but also represents a thoughtful and diverse range of voices and ideas.</p>
         </div>
         {/* Changing images div */}
         <FollowerPointerCard title="Nature and flowers, like reading, nurture the soul, offering quiet moments of reflection and growth. Both invite us to slow down, reflect, and find beauty in simplicity.">

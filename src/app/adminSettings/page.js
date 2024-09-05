@@ -6,6 +6,9 @@ import AddFolderComponent from "@/components/AddFolderComponent";
 import AddReadingComponent from "@/components/AddReadingComponent";
 import DeleteReadingComponent from "@/components/DeleteReadingComponent";
 import DeleteFolderComponent from "@/components/DeleteFolderComponent";
+import AddMemberComponent from "@/components/AddMemberComponent";
+import AddVideoComponent from "@/components/AddVideo";
+import DeleteVideoComponent from "@/components/DeleteVideoComponent";
 
 const Page = () => {
   return (
@@ -34,6 +37,18 @@ const Page = () => {
       <h1 className="text-2xl text-white font-bold">Delete a Folder</h1>
 
       <DeleteFolderComponent/>
+
+      <h1 className="text-2xl text-white font-bold">Add a Video</h1>
+
+      <AddVideoComponent/>
+
+      <h1 className="text-2xl text-white font-bold">Delete a Video</h1>
+
+      <DeleteVideoComponent/>
+
+      <h1 className="text-2xl text-white font-bold">Add a Member</h1>
+
+      <AddMemberComponent/>
 
     </main>
   )

@@ -5,11 +5,26 @@ const VideoComponent = () => {
   const [videos, setVideos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  // Helper function to convert YouTube watch URLs to embed URLs
+  const convertToEmbedUrl = (url) => {
+    const regExp = /^https:\/\/www\.youtube\.com\/watch\?v=([\w-]{11})/;
+    const match = url.match(regExp);
+    if (match && match[1]) {
+      return `https://www.youtube.com/embed/${match[1]}`;
+    }
+    return url; // Return the original URL if it's not a YouTube link
+  };
+
   useEffect(() => {
     const loadVideos = async () => {
       try {
         const fetchedVideos = await fetchAllVideos(); // Fetch videos from Firestore
-        setVideos(fetchedVideos); // Set the videos in state
+        // Convert YouTube video URLs to embed URLs
+        const processedVideos = fetchedVideos.map(video => ({
+          ...video,
+          src: convertToEmbedUrl(video.src) // Convert src if necessary
+        }));
+        setVideos(processedVideos); // Set the videos in state
       } catch (error) {
         console.error('Error fetching videos:', error);
       } finally {
@@ -38,9 +53,8 @@ const VideoComponent = () => {
           <iframe
             width="100%"
             height="315"
-            src={video.src} // Use the src from the Firestore document
+            src={video.src} // Use the converted or original src
             title={video.title} // Use the title from the Firestore document
-            frameBorder="0"
             allowFullScreen
             className="rounded-lg"
           ></iframe>

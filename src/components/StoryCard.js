@@ -12,7 +12,7 @@ export const StoryCard = ({id, title, description, imageUrl}) => {
         <img 
         src={imageUrl}
         alt="event" 
-        fill
+        fill="cover"
         style={{ objectFit: 'cover' }}
         className="absolute inset-0" 
         />

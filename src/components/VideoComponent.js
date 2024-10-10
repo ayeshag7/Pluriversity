@@ -47,8 +47,9 @@ const VideoComponent = () => {
         const processedVideos = fetchedVideos.map(video => ({
           ...video,
           src: convertToEmbedUrl(video.src) // Convert src if necessary
-        }));
+        })).reverse();
         setVideos(processedVideos); // Set the videos in state
+        console.log(processedVideos);
       } catch (error) {
         console.error('Error fetching videos:', error);
       } finally {

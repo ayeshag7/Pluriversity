@@ -18,7 +18,7 @@ export const ReadingCard = ({ title, authorName, year }) => {
         <Image
           src={randomImage}
           alt="pattern"
-          fill
+          fill="cover"
           style={{ objectFit: "cover" }}
           className="absolute inset-0"
         />

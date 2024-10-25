@@ -1,4 +1,5 @@
 import { ImageCard } from "@/components/ImageCard";
+import Link from "next/link";
 
 const Page = () => {
   const images = [
@@ -17,13 +18,14 @@ const Page = () => {
 
       {/* text div */}
       <div>
+        <Link href="/"><p className="text-xl text-[#89BE63] mb-8 px-4 md:px-12"><span className="text-5xl">←</span></p></Link>
         {/* title of the event */}
         <h1 className="text-[#89BE63] font-bold text-2xl md:text-3xl px-4 md:px-12 mb-8">
           Launching Ceremony of The Pluriversity Lahore
         </h1>
         {/* description of the event */}
-        <p className="font-normal text-base leading-6 text-white px-4 md:px-12 mt-6">
-          The Pluriversity Lahore! a hybrid learning space led by the leading scholars of critical, decolonial, anti-colonial, indigenous & subaltern studies of #InternationalRelations, #PeaceStudies #SocialSciences and #Humanities in Pakistan and beyond #ThePluriversityLahore is a locally rooted , globally connected learning & unlearning space where we dare to imagine peace, security and future on our own terms. In contemporary academic jargon, we are a #RethinkTank of Peace Studies and International Relations, centering the subaltern voices that have been suppressed for too long.
+        <p className="font-normal text-base leading-6 text-white px-4 md:pl-12 md:pr-16 mt-6">
+        The Pluriversity Lahore is a hybrid learning space led by scholars in critical, decolonial, and indigenous studies across International Relations, Peace Studies, Social Sciences, and Humanities. Rooted locally and connected globally, it reimagines peace, security, and future on our terms—a true "Rethink Tank" that centers long-suppressed subaltern voices.
         </p>
       </div>
 

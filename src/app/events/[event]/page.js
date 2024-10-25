@@ -25,7 +25,7 @@ const Page = () => {
         </h1>
         {/* description of the event */}
         <p className="font-normal text-base leading-6 text-white px-4 md:pl-12 md:pr-16 mt-6">
-        The Pluriversity Lahore is a hybrid learning space led by scholars in critical, decolonial, and indigenous studies across International Relations, Peace Studies, Social Sciences, and Humanities. Rooted locally and connected globally, it reimagines peace, security, and future on our terms—a true "Rethink Tank" that centers long-suppressed subaltern voices.
+        The Pluriversity Lahore is a hybrid learning space led by scholars in critical, decolonial, and indigenous studies across International Relations, Peace Studies, Social Sciences, and Humanities. Rooted locally and connected globally, it reimagines peace, security, and future on our terms—a true &quot;Rethink Tank&quot; that centers long-suppressed subaltern voices.
         </p>
       </div>
 

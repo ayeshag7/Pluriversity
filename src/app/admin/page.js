@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
+import AdminSettings from "@/components/adminSettings"; 
 import { useState } from "react";
-import { useRouter } from 'next/navigation'; // Use the new import for router
 
 const Page = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const router = useRouter();
+  const [isAuthenticated, setIsAuthenticated] = useState(false); // New state to track if login is successful
 
   const correctUsername = "admin-pluriversity-lahore";
   const correctPassword = "pl456lh12_6%";
@@ -16,13 +16,18 @@ const Page = () => {
     event.preventDefault();
 
     if (username === correctUsername && password === correctPassword) {
-      // Redirect to adminSettings page
-      router.push('/adminSettings');
+      // Set the authentication state to true if login is successful
+      setIsAuthenticated(true);
     } else {
       // Show error message
       setErrorMessage("Incorrect username or password.");
     }
   };
+
+  if (isAuthenticated) {
+    // Conditionally render the adminSettings component
+    return <AdminSettings />;
+  }
 
   return (
     <main className="p-24 min-h-screen bg-[#0A0708]">
@@ -58,6 +63,6 @@ const Page = () => {
       </div>
     </main>
   );
-}
+};
 
 export default Page;
